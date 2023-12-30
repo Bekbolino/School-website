@@ -1,0 +1,150 @@
+doctype html 
+html(lang="en") 
+  head 
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Robo School
+    link(rel="stylesheet", href="../styles/normalize.css")
+    link(rel="stylesheet", href="../styles/styles.css")
+  body 
+    header.header 
+      nav.header__nav 
+        img.header__logo(src="../img/logo.svg")
+        ul.header__items 
+          li.heaedr__item 
+            a.header__link(href="#") О школе
+          li.heaedr__item 
+            a.header__link(href="#") Тренеры
+          li.heaedr__item 
+            a.header__link(href="#") Стоимость
+        a.header__num(href="tel:+78000001122") +7 800 000 11 22
+    main 
+      section.hero 
+        .hero__wrapper
+          .hero__container.container 
+            h1.title.hero__title ROBO SCHOOL
+            p.hero__text Курсы повышения квалификации по&nbsp;робототехнике для педагогов начальной школы
+            button.hero__btn Записаться на&nbsp;курс
+
+      section.about 
+        .about__container.container 
+          h2.title.about__title Robo School&nbsp;&mdash; учреждение для формирования кадрового педагогического резерва в&nbsp;сфере робототехники и&nbsp;программирования
+          ul.about__list 
+            li.about__item.about__item-active 
+              strong.about__strong 10
+              p.about__txt  УМК по&nbsp;различным направлениям&nbsp;по&nbsp;робототехнике
+            li.about__item 
+              strong.about__strong 20
+              p.about__txt Школ, в&nbsp;которых запущена робототехника
+            li.about__item 
+              strong.about__strong 100
+              p.about__txt Педагогов прошедших курсы повышения квалификации
+            li.about__item 
+              strong.about__strong 10 000
+              p.about__txt Обученных детей на&nbsp;базе собственных центров
+
+      section.getting 
+        .getting__container.container 
+          h2.title.getting__title Что вы&nbsp;получите после курса
+          //- .getting__block При наличии свободных мест
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12Z" fill="#141024" fill-opacity="0.08"/>
+                  <path d="M11.5488 7.8695C10.9552 7.8695 10.6584 7.5895 10.6584 7.0295C10.6584 6.4807 10.9552 6.2063 11.5488 6.2063C12.1424 6.2063 12.4392 6.4807 12.4392 7.0295C12.4392 7.5895 12.1424 7.8695 11.5488 7.8695ZM11.5488 18.0839C11.1008 18.0839 10.8768 17.8375 10.8768 17.3447V10.4735C10.8768 9.9919 11.1008 9.7511 11.5488 9.7511C12.008 9.7511 12.2376 9.9919 12.2376 10.4735V17.3447C12.2376 17.8375 12.008 18.0839 11.5488 18.0839Z" fill="#141024"/>
+                </svg>
+          ul.getting__list 
+            li.getting__item
+              strong.getting__strong Удостоверение
+              p.getting__txt Дающее право преподавать робототехнику для детей 6-12 лет в&nbsp;образовательных учреждениях
+            li.getting__item
+              strong.getting__strong Знания
+              p.getting__txt По&nbsp;основам разработки учебно-методических комплексов по&nbsp;робототехнике&nbsp;и программированию
+            li.getting__item
+              strong.getting__strong Практику
+              p.getting__txt Возможность пройти практику по&nbsp;преподаванию&nbsp;робототехники на&nbsp;базе R:ED&nbsp;LAB&nbsp;(в&nbsp;оффлайн или онлайн формате)
+
+      section.coaches 
+        .coaches__container.container 
+          h2.title.coaches__title Профессиональные тренеры
+          .coaches__wrapper
+            ul.coaches__slider 
+              li.coaches__item 
+                article 
+                  img.coaches__image(src="../img/slider-1.jpg")
+                  .preview 
+                    strong.coaches__name Ирина Лайм
+                    span.coaches__info преподаватель по робототехнике
+                    a.coaches__link(href="#") Подробнее
+              li.coaches__item 
+                article 
+                  img.coaches__image(src="../img/slider-2.jpg")
+                  .preview 
+                    strong.coaches__name Марина Орлова
+                    span.coaches__info преподаватель по робототехнике
+                    a.coaches__link(href="#") Подробнее
+              li.coaches__item 
+                article 
+                  img.coaches__image(src="../img/slider-3.jpg")
+                  .preview 
+                    strong.coaches__name Максим Петров
+                    span.coaches__info преподаватель по программированию
+                    a.coaches__link(href="#") Подробнее
+              //- li.coaches__item 
+              //-   article 
+              //-     img.coaches__image(src="../img/slider-4.jpg")
+              //-     .preview 
+              //-       strong.coaches__name Константин Назаров
+              //-       span.coaches__info преподаватель по робототехнике
+              //-       a.coaches__link(href="#") Подробнее
+              //- li.coaches__item 
+              //-   article 
+              //-     img.coaches__image(src="../img/slider-5.jpg")
+              //-     .preview 
+              //-       strong.coaches__name Лиза Весенняя
+              //-       span.coaches__info преподаватель по программированию
+              //-       a.coaches__link(href="#") Подробнее
+          .coaches__btn
+            svg.coaches__svg(xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none")
+              path(fill-rule="evenodd" clip-rule="evenodd" d="M0.333172 17C0.333172 26.2 7.8165 33.6666 16.9998 33.6666L17.4661 33.6602C26.4508 33.413 33.6665 26.044 33.6665 17C33.6665 7.81665 26.1998 0.333313 16.9998 0.333313C7.8165 0.333313 0.333172 7.81665 0.333172 17ZM20.2998 10.3333C20.7832 10.8333 20.7832 11.6166 20.2832 12.1L15.3665 17L20.2832 21.9C20.7832 22.3833 20.7832 23.1833 20.2998 23.6666C19.7998 24.1666 19.0165 24.1666 18.5332 23.6666L12.7165 17.8833C12.4832 17.65 12.3498 17.3333 12.3498 17C12.3498 16.6666 12.4832 16.35 12.7165 16.1166L18.5332 10.3333C18.7665 10.0833 19.0832 9.96665 19.3998 9.96665C19.7332 9.96665 20.0498 10.0833 20.2998 10.3333Z" )
+            svg.coaches__svg(xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none")
+              path(fill-rule="evenodd" clip-rule="evenodd" d="M33.6668 17C33.6668 26.2 26.1835 33.6666 17.0002 33.6666L16.5339 33.6602C7.5492 33.413 0.333496 26.044 0.333496 17C0.333496 7.81665 7.80016 0.333313 17.0002 0.333313C26.1835 0.333313 33.6668 7.81665 33.6668 17ZM13.7002 10.3333C13.2168 10.8333 13.2168 11.6166 13.7168 12.1L18.6335 17L13.7168 21.9C13.2168 22.3833 13.2168 23.1833 13.7002 23.6666C14.2002 24.1666 14.9835 24.1666 15.4668 23.6666L21.2835 17.8833C21.5168 17.65 21.6502 17.3333 21.6502 17C21.6502 16.6666 21.5168 16.35 21.2835 16.1166L15.4668 10.3333C15.2335 10.0833 14.9168 9.96665 14.6002 9.96665C14.2668 9.96665 13.9502 10.0833 13.7002 10.3333Z" )
+
+      section.choice 
+        .choice__container.container 
+          h2.title.choice__title Выберите нужный пакет
+          ul.choice__cards 
+            li.choice__card 
+              strong.choice__strong – PRO –
+              span.choice__cost 20.000 ₽
+              span.choice__info УМК по&nbsp;робототетхнике и&nbsp;программированию
+              button.choice__btn  Оставить заявку
+            li.choice__card 
+              strong.choice__strong – ROBO –
+              span.choice__cost 15.000 ₽
+              span.choice__info УМК по&nbsp;робототетхнике
+              button.choice__btn  Оставить заявку
+            li.choice__card 
+              strong.choice__strong – PROG –
+              span.choice__cost 10.000 ₽
+              span.choice__info УМК по&nbsp;программированию
+              button.choice__btn  Оставить заявку
+
+          
+    footer.footer 
+      .footer__back 
+        .footer__top 
+          .footer__container.container 
+            .footer__preview
+              h2.title.footer__title  Запишитесь на&nbsp;курс со&nbsp;скидкой&nbsp;10%
+              p.footer__txt Акция действительна до 10&nbsp;марта&nbsp;2022&nbsp;года
+            form.footer__form(action="")
+              input.footer__input(type="text", required, placeholder="Имя") 
+              input.footer__input(type="tel", required, placeholder="Телефон") 
+              input.footer__input(type="mail", required, placeholder="Email")
+              button.footer__btn(type="submit") Оформить заявку
+      .footer__btm
+        .footer__block
+          img.footer__logo(src="../img/logo.svg")
+          a.footer__num(href="tel:+78000001122") +7 800 000 11 22
+        span.footer__license © ROBO.SCHOOL
+
+            

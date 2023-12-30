@@ -1,0 +1,46 @@
+@import "mixin.scss";
+@import "fonts.scss";
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: "Jost", Tahoma;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  @include list-reset
+}
+
+button {
+  @include btn-reset
+}
+
+.container {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.title {
+  @include title-reset
+}
